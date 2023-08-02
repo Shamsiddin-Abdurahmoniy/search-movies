@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ICON link -->
+    <link rel="icon" href="./images/png/movie-icon.png" type="image/x-icon" />
+    <!-- FONT AWESOME link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Movies</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-container container">
+        <a class="site-logo" href="./index.html"
+          ><i class="fa-solid fa-tv" style="color: 0079ff"></i>
+          <span>MOVIES</span>
+        </a>
+        <!-- dark mode -->
+        <button id="dark-btn">
+          <img
+            src="./images/svg/dark-icon.svg"
+            alt="Moon icon"
+            width="40"
+            height="40"
+          />
+        </button>
+        <!-- light mode -->
+        <button id="light-btn" class="light-btn hidden">
+          <img
+            src="./images/svg/light-icon.svg"
+            alt="Sun icon"
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <!-- SECTION 1 -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="title">SEARCHING MOVIES</h1>
+        </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="search-section container">
+        <img
+          class="search-icon"
+          src="./images/svg/search-icon.svg"
+          alt="Search icon"
+        />
+        <form class="" id="form">
+          <input
+            id="search-input"
+            type="text"
+            name="film"
+            class="search-input"
+            placeholder="Search a Movie..."
+            autocomplete="off"
+          />
+          <!-- <button class="search-btn" id="search-btn">Search</button> -->
+        </form>
+      </section>
+      <!-- SECTION 3 -->
+      <section class="card-section container">
+        <ul class="movies-list" id="movies-list"></ul>
+      </section>
+    </main>
+    <!-- overlay -->
+    <div class="overlay hidden">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- JAVASCRIPT link -->
+    <script src="./js/mode.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

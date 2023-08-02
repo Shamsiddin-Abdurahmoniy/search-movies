@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Movie</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ICON link -->
+    <link rel="icon" href="./images/png/movie-icon.png" type="image/x-icon" />
+    <!-- FONT AWESOME link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a class="site-logo" href="./index.html"
+          ><i class="fa-solid fa-tv" style="color: 0079ff"></i>
+          <span>MOVIES</span>
+        </a>
+        <!-- dark mode -->
+        <button id="dark-btn">
+          <img
+            src="./images/svg/dark-icon.svg"
+            alt="Moon icon"
+            width="40"
+            height="40"
+          />
+        </button>
+        <!-- light mode -->
+        <button id="light-btn" class="light-btn hidden">
+          <img
+            src="./images/svg/light-icon.svg"
+            alt="Sun icon"
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <!-- SECTION 1 -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="title">ABOUT MOVIE</h1>
+        </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="prime-section container">
+        <div class="card-about">
+          <img
+            class="card-img"
+            src="https://m.media-amazon.com/images/M/MV5BYzE3ODhiNzAtOWY4MS00NTdiLThmNDctNDM4NjRiNGFmYjI1XkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_SX300.jpg"
+            alt="Movie photo"
+            width="530"
+            height="685"
+          />
+          <div class="card-data">
+            <h1 class="movie-title">Tom & Jerry</h1>
+            <hr class="about-line" />
+            <h3 class="movie-data">Year: <span class="data">2021</span></h3>
+            <h3 class="movie-data">
+              Country:
+              <span class="data"
+                >United States, United Kingdom, France, Germany</span
+              >
+            </h3>
+            <h3 class="movie-data">
+              Genre:
+              <span class="data">Animation, Adventure, Comedy</span>
+            </h3>
+            <h3 class="movie-data">
+              Director:
+              <span class="data">Tim Story</span>
+            </h3>
+            <h3 class="movie-data">
+              Writter:
+              <span class="data"
+                >Fredrik T. Olsson (screenplay), Anders Nilsson (idea), Joakim
+                Hansson (idea), Anders Nilsson (concept),</span
+              >
+            </h3>
+            <h3 class="movie-data">
+              Actors:
+              <span class="data"
+                >Chloë Grace Moretz, Michael Peña, Colin Jost</span
+              >
+            </h3>
+
+            <h3 class="movie-data">
+              Box office:
+              <span class="data">$46,536,687</span>
+            </h3>
+            <h3 class="movie-data">
+              Language:
+              <span class="data">English</span>
+            </h3>
+
+            <h3 class="movie-data">
+              Duration:
+              <span class="data">101 min</span>
+            </h3>
+            <h3 class="movie-data">
+              Ratings:
+              <span class="data">Internet Movie Database: 5.2/10</span>
+            </h3>
+            <h3 class="movie-data">
+              Description:
+              <span class="movie-description data"
+                >A chaotic battle ensues between Jerry Mouse, who has taken
+                refuge in the Royal Gate Hotel, and Tom Cat, who is hired to
+                drive him away before the day of a big wedding</span
+              >
+            </h3>
+            <a href="./index.html" class="link">Back to</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- overlay -->
+    <!-- <div class="overlay hidden">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+    <!-- JAVASCRIPT link -->
+    <script src="./js/request.js"></script>
+    <script src="./js/mode.js"></script>
+    <script src="./js/about.js"></script>
+  </body>
+</html>

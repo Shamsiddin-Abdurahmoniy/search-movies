@@ -1,0 +1,321 @@
+/* FONTS */
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v14-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v14-latin-700.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Jost", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  background-color: var(--bg-clr);
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+:root {
+  /* colors */
+  --logo-input-clr: #222731;
+  --bg-clr: #f6f8ff;
+  --primary-clr: #0079ff;
+  --secondary-clr: #2b3442;
+  --mode-text-clr: #4b6a9b;
+  --mode-card-clr: #fefefe;
+  /* fonts */
+  --font-family: "Jost", sans-serif;
+  --font-weight: 400;
+  --font-weight2: var;
+  --line-height: 2.5rem;
+  --font-size: 1.5rem;
+  --h1-size: 3rem;
+  --h1--ln-height: 3.8rem;
+  --h2-size: 2.2rem;
+  --h2-ln-height: 3.3rem;
+  --h3-size: 1.6rem;
+  --h3-ln-height: 2.4rem;
+  --h4-size: 1.3rem;
+  --h4-ln-height: 2rem;
+}
+/* HEADER */
+.header-container {
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo {
+  margin-right: auto;
+  font-size: 3rem;
+  color: var(--logo-input-clr);
+}
+/* MAIN */
+/* SECTION 1 */
+.hero-section {
+  background-image: url(../images/jpg/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0rem;
+  margin-bottom: 3.6rem;
+}
+.title {
+  font-style: italic;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight2);
+  font-size: var(--h1-size);
+  letter-spacing: 0.4rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* SECTION 2 */
+.search-section {
+  background-color: var(--mode-card-clr);
+  border-radius: 1rem;
+  width: 40%;
+  height: 100%;
+  max-height: 6.9rem;
+  box-shadow: 0rem 1.6rem 3rem -1rem rgba(70, 96, 187, 0.198567);
+  display: flex;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.search-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+#form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2.4rem;
+}
+.search-input {
+  width: 100%;
+  height: 90%;
+  font-style: normal;
+  font-weight: var(--font-weight);
+  font-size: var(--h2-size);
+  line-height: var(--line-height);
+  color: var(--logo-input-clr);
+  background-color: var(--mode-card-clr);
+  border: 0rem;
+  outline: none;
+}
+.search-input::placeholder {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--h2-size);
+  line-height: var(--line-height);
+  color: var(--light-text-clr);
+}
+/* SECTION 3 */
+.movies-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.movie-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  padding: 2rem 2.4rem;
+  border: 0rem;
+  border-radius: 1rem;
+  background-color: var(--mode-card-clr);
+  box-shadow: 0rem 1.6rem 3rem -1rem rgba(70, 96, 187, 0.198567);
+  margin-bottom: 2rem;
+}
+.movie-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.poster {
+  border-radius: 1rem;
+}
+.line {
+  margin: 1rem 0rem 1.5rem;
+  width: 100%;
+  height: 0.18rem;
+  border: 0rem;
+  background-color: var(--primary-clr);
+}
+.movie-data {
+  margin-bottom: 1.2rem;
+  color: var(--secondary-clr);
+}
+.data {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: italic;
+  color: var(--mode-text-clr);
+}
+.link {
+  font-weight: var(--font-weight2);
+  font-size: 1.6rem;
+  line-height: var(--line-height);
+  padding: 1.2rem 2.3rem 1.3rem 2.4rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: var(--primary-clr);
+  transition: all 0.4s ease;
+  border: 0.2rem solid var(--primary-clr);
+}
+.link:hover {
+  opacity: 0.8;
+}
+.link:active {
+  opacity: 0.5;
+  background-color: none;
+}
+
+/* ABOUT */
+.card-about {
+  display: flex;
+  border-radius: 1rem;
+  padding: 2.2rem 2.7rem;
+  background-color: var(--mode-card-clr);
+}
+.card-img {
+  border-radius: 1rem;
+  margin-right: 3rem;
+}
+.about-line {
+  margin: 2rem 0rem;
+  width: 100%;
+  height: 0.18rem;
+  border: 0rem;
+  background-color: var(--primary-clr);
+}
+.movie-title {
+  color: var(--secondary-clr);
+  /* font-size: 4rem; */
+}
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* mode */
+.dark-mode {
+  --logo-input-clr: #ffffff;
+  --bg-clr: #141d2f;
+  --primary-clr: #0079ff;
+  --secondary-clr: #ffffff;
+  --mode-text-clr: #ffffff;
+  --mode-card-clr: #1e2a47;
+}
+/* hidden */
+.hidden {
+  display: none;
+}
